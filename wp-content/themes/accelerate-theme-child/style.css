@@ -10,7 +10,7 @@ Tags:     	  light, dark, two-columns, right-sidebar, responsive-layout, accessi
 Text Domain:  accelerate-theme-child
 */
 
-/* Home page layout */
+/* Homepage layout */
 .home-page {
   background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 }
@@ -23,7 +23,7 @@ Text Domain:  accelerate-theme-child
   background: none repeat scroll 0 0 #45ac9d;
 }
 
-/* Featured work */
+/* Homepage - Featured work */
 .featured-work .site-content {
   margin: 6em auto;
 }
@@ -50,7 +50,7 @@ display: block;
   font: 500 1em/1.75 'Open Sans', Arial, sans-serif;
 }
 
-/* Home page blog post */
+/* Homepage - Blog post */
 .blog-post h4 {
 	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 	color: #a6a6a6;
@@ -65,6 +65,78 @@ display: block;
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+
+/* About page */
+.about-page {
+  background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+  height: auto;
+  margin: 0 0 5em;
+  text-align: center;
+}
+
+.about-content {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.about-content-detail {
+  flex-grow: 1;
+  vertical-align: top;
+}
+
+.about-content p {
+  color: white;
+  font-size: 2em;
+  padding-right: 10em;
+  padding-left: 9em;
+  text-align: center;
+}
+
+.services-text {
+  text-align: center;
+  width: 55%;
+}
+
+#about {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.service-left {
+  float: left;
+  width: 60%;
+}
+
+.service-right {
+  float: right;
+  width: 60%;
+}
+
+.image-left img {
+  margin-top: 5.5em;
+}
+
+.image-right img {
+  margin-top: 5em;
+  margin-left: 9em;
+}
+
+#contact-link {
+  border-top: 1px solid #bfbfbf;
+  padding-top: 4em;
+  margin-bottom: 3em;
+  margin-left: 240px;
+  margin-right: 240px;
+  margin-top: 5em;
+  text-align: center;
+}
+
+#contact-text {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-right: 1em;
+}
+
 
 /* Case studies */
 .case-study {
@@ -90,6 +162,78 @@ div.case-study-images img {
   width: 100%;
   margin-bottom: 3.125em;
   border: 1px solid #dddddd;
+}
+
+/* Social nav menu */
+
+ul#menu-social {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+}
+
+li.menu-item span {
+  display: none;
+}
+
+li.menu-item {
+  display: inline;
+  padding-right: 0.75em;
+}
+
+li.menu-item img {
+  width: 75%;
+}
+
+/* Contact form */
+
+div#contact-page {
+  margin-left: 24em;
+  padding-right: 21.5em;
+}
+
+h2#contact-us {
+  font-size: 2em;
+  line-height: 1;
+}
+
+p.has-normal-font-size {
+  color: #757575;
+}
+
+div#nf-field-1-container {
+  clear: none;
+  float: left;
+  width: 47%;
+  margin-right: 1.5em;
+}
+
+div#nf-field-2-container {
+  clear: none;
+  float: left;
+  width: 48%;
+}
+
+div.nf-field-label label {
+  font-weight: 300;
+}
+
+input#nf-field-1, input#nf-field-2, textarea#nf-field-3 {
+  background: white;
+}
+
+textarea#nf-field-3 {
+  resize: none;
+}
+
+div#nf-field-4-container {
+  float: right;
+}
+
+input#nf-field-4 {
+  background: #45ac9d;
+  padding-left: 4em;
+  padding-right: 4em;
 }
 
 /* Media Queries */
@@ -120,25 +264,4 @@ div.case-study-images img {
       float: left;
       width: 60%;
   }
-}
-
-/* Social nav menu */
-
-ul#menu-social {
-  list-style: none;
-  display: flex;
-  margin: 0px;
-}
-
-li.menu-item span {
-  display: none;
-}
-
-li.menu-item {
-  display: inline;
-  padding-right: 1em;
-}
-
-li.menu-item img {
-  width: 100%;
 }
