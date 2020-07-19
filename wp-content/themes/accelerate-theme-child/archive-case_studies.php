@@ -11,10 +11,11 @@
 get_header(); ?>
 <div id="primary" class="site-content">
 		<div class="main-content" role="main">
-	<?php while ( have_posts() ) : the_post();
-			$image_1 = get_field("image_1");
-			$size = "full";
-			$services = get_field('services'); ?>
+      <?php query_posts('post_type=case_studies&order=ASC'); ?>
+	    <?php while ( have_posts() ) : the_post();
+        $image_1 = get_field("image_1");
+        $size = "full";
+        $services = get_field('services'); ?>
 
 		<article class="case-study clearfix">
 			<aside class="case-study-sidebar">
