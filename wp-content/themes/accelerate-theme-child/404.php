@@ -14,9 +14,16 @@
 
 get_header(); ?>
 
-	<div id="404-error" class="site-content">
+	<div id="error-404" class="site-content">
 		<div class="main-content" role="main">
-      <h1>404</h1>
+      <figure class="error-404-img">
+      <img src="<?php echo THEME_IMG_PATH; ?>/yoda.png" />
+      </figure>
+      <section class="error-404-message">
+        <h1>404</h1>
+        <p>The page you are looking for, this is not.</p>
+        <p>Return to the <a href="<?php echo site_url('/') ?>">homepage</a>, you may.</p>
+      </section>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
 
