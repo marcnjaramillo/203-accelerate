@@ -267,6 +267,14 @@ input#nf-field-4 {
   padding-right: 4em;
 }
 
+/* Newsletter sign up */
+
+p.newsletter-submit input {
+  background: #45ac9d;
+  padding-top: 13px;
+  text-transform: uppercase;
+}
+
 /* 404 page */
 
 .error-404-img {
